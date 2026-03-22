@@ -1,0 +1,366 @@
+body {
+  background-color: rgb(181, 210, 219);
+  font-family:Arial, Helvetica, sans-serif;
+  height: 100vh;
+  word-wrap: break-word;
+}
+
+.pageinputitems {
+  justify-content: center;
+  font-size: min(1.5em, 3vw);
+}
+input {
+  background-color: rgb(193, 209, 209);
+  width: min(16em, 40vw);
+  height: min(2em, 40vw);
+  
+}
+input:hover {
+  background-color: rgb(88, 138, 184);
+}
+input[type = text]:focus {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.img {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 40%;*/
+  width: min(22em, 40vw);
+}
+
+.imgBase{
+  
+  margin: auto;
+  width: 50%;
+
+}
+
+.button {
+  background-color: rgb(224, 219, 219);
+  height: 50px;
+  width: 100px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(13, 14, 13);
+
+  align-content: center;
+  text-decoration: none;
+  
+}
+
+.buttonHome{
+  background-color: rgb(224, 219, 219);
+  height: 50px;
+  width: 100px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(13, 14, 13);
+
+  align-content: center;
+  text-decoration: none;
+  background-color: rgb(102, 207, 102);
+  
+}
+.forminput{
+  
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 5%;
+  text-align: center;
+  
+}
+
+.HomeNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buttonHome:hover {
+  background-color: rgb(2, 99, 5);
+
+
+}
+
+.pagelog {
+  display: block;
+  
+  padding-top: 5%;
+  
+}
+.pagebody {
+  height: 20px;
+  padding-top: 1%;
+  display: block;
+  
+}
+
+.UploadActivities:hover + .ScrollActivitiesUpload {
+  display: flex;
+}
+
+.ScrollActivitiesUpload:hover  {
+  display:flex;
+}
+
+.UploadActivities:hover + .FilterOptions {
+  display: inline-block;
+}
+.FilterOptions:hover {
+  display: inline-block;
+}
+ul  {
+  list-style-type: 'none'; 
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.FilterOptions 
+{
+  display: none;
+}
+
+
+
+
+.FindsBody {
+  
+  
+  background-color:rgb(239, 245, 243);
+  width: min(50em, 50vw);
+  margin: auto;
+  text-align: left;
+  
+}
+
+.FindsBodyContent{
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: min(1.6em, 50vw) ;
+  word-wrap: break-word;
+}
+
+.activityDesctiption {text-align: center;
+  font-size: min(1.6em, 50vw) ;
+  width: 65%;
+  word-wrap: break-word;
+}
+.ActivityContentContainer {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.ScrollActivitiesUpload {
+  overflow:scroll;
+  height: 200px;
+  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  display: none;
+  flex-direction: column;
+  
+  align-items: center;
+  margin: auto;
+}
+
+.ScrollActivitiesUpload::-webkit-scrollbar {
+  display: none;
+  
+}
+
+.DropDownStyle{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  
+
+ 
+  align-items: center;
+  
+}
+
+img {
+  width: min(30em, 50vw);
+  display: block;
+  margin: auto;
+  
+ }
+
+.navigationbar  {
+  width: min(27em, 50vw);
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+.logonpage{
+  height: 40%;
+  background-color:rgb(239, 245, 243);
+  width: min(30em, 50vw);
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.Container {
+  
+  display:inline-block;
+  width: 50%;
+  
+
+}
+.ContainerHome {
+  
+  display:inline-block;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.ImageGroup{
+  width: 60%;
+  
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.ButtonAlign {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 50px;
+  width: 40%;
+  background-color: rgb(102, 207, 102);
+}
+
+.NewButton {
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(13, 14, 13);
+  align-content: center;
+  text-decoration: none;
+  font-size: min(1em, 3vw);
+  text-align: center;
+}
+
+
+.AlignMe{
+  display: block;
+  
+
+  }
+
+  .ImageDis {
+    display: block;
+  }
+
+@media only screen and (max-width: 30em)  {
+  .HomeNav {
+    flex-direction: column;
+  }
+  .buttonHome{
+   width: 100%;
+  }
+  .Container {
+    display: block;
+    width: 100%
+  }
+  .ContainerHome {
+    display: block;
+    width: 100%
+  }
+  .AlignMe{
+  display: flex;
+  flex-direction: column;
+
+  }
+  .FilterOptions {
+    flex-direction: column;
+  }
+  .Disapear {
+    display: none;
+  }
+  .DropDownStyle {
+    width: 50%;
+    
+  }
+  .DropDownStyle{
+    display: flex;
+    flex-direction: column;
+    
+  }
+ 
+  
+}
+
+.DropDownWidth {
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.homePage {
+  min-height: 100%;
+  background-color: azure;
+  display: flex;
+  margin: 0;
+  justify-content: center ;
+}
+
+
+td {
+  width: 8em;
+  font-size: 150%;
+  text-align: center;
+}
+
+
+.HomeFinds {
+ 
+  max-width: 10em;
+  max-height: 10em;
+  padding: 10px;
+}
+
+.headings{
+  font-size: min(2em, 5vw);
+  word-wrap: break-word;
+
+}
+
+
+.FontSizeHome {
+  font-size: min(1.5em, 3vw);
+  word-wrap: break-word;
+}
+.FontSizeHomeTitle {
+  font-size: min(1.7em, 4vw);
+  word-wrap: break-word;
+
+}
+
+.awardsStyles {
+  height: min(5em, 10vw);
+  width: min(5em, 10vw);
+}
